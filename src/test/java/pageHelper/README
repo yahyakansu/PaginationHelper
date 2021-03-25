@@ -1,0 +1,6 @@
+
+I created this project by using java and TestNG.
+There are two classes in the maven project. PaginationHelper class to run the codes. 
+PaginationHelperTest class for the testing.This class contains four different functional tests. 
+Every test contains an assertion that equality between actual and expected values. 
+
