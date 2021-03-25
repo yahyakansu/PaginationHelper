@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/pageCount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/itemCount.feature");
 formatter.feature({
-  "name": "Count of the page",
+  "name": "Count of the items in the array",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "This test calculate the page count with in the array",
+  "name": "This test count all items in the array",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -20,31 +20,31 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "an array and integer value for count of page",
+  "name": "an array and integer value for count of page for count of items",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PageCountSteps.an_array_and_integer_value_for_count_of_page()"
+  "location": "ItemCountSteps.an_array_and_integer_value_for_count_of_page_for_count_of_items()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "method runs",
+  "name": "print result for items count",
   "keyword": "When "
 });
 formatter.match({
-  "location": "PageCountSteps.method_runs()"
+  "location": "ItemCountSteps.print_result_for_items_count()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "actual count result must be equal to the expected count",
+  "name": "actual count result must be equal to the expected count for count of items",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PageCountSteps.actual_count_result_must_be_equal_to_the_expected_count()"
+  "location": "ItemCountSteps.actual_count_result_must_be_equal_to_the_expected_count_for_count_of_items()"
 });
 formatter.result({
   "status": "passed"

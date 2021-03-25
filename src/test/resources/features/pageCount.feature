@@ -1,4 +1,3 @@
-@All
 Feature: Count of the page
 
   Scenario: This test calculate the page count with in the array

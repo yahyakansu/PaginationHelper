@@ -1,8 +1,8 @@
 package pageHelper;
 
 public class PaginationHelper {
-    private final char[] collection;
-    private final double itemsPerPage;
+    public char[] collection;
+    public double itemsPerPage;
 
     /**
      * Constructor takes array and page number
