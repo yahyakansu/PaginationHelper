@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "This test calculate the page count with in the array",
+        "description": "",
+        "id": "count-of-the-page;this-test-calculate-the-page-count-with-in-the-array",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 906614,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an array and integer value for count of page",
+            "match": {
+              "location": "PageCountSteps.an_array_and_integer_value_for_count_of_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 316216,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "method runs",
+            "match": {
+              "location": "PageCountSteps.method_runs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2504138,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "actual count result must be equal to the expected count",
+            "match": {
+              "location": "PageCountSteps.actual_count_result_must_be_equal_to_the_expected_count()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          }
+        ]
+      }
+    ],
+    "name": "Count of the page",
+    "description": "",
+    "id": "count-of-the-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/pageCount.feature",
+    "tags": [
+      {
+        "name": "@All",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
