@@ -4,172 +4,217 @@
     "elements": [
       {
         "line": 4,
-        "name": "This test count of the items in first page",
+        "name": "This test shows how many item are remaining within range",
         "description": "",
-        "id": "count-the-items-according-to-pages;this-test-count-of-the-items-in-first-page",
+        "id": "count-the-items-remaining-to-the-last-page;this-test-shows-how-many-item-are-remaining-within-range",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3009946,
+              "duration": 2575248,
               "status": "passed"
             },
             "line": 5,
-            "name": "an array and integer value for count of page for page item count for page items",
+            "name": "an array and integer value for page index",
             "match": {
-              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+              "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 256828,
+              "duration": 131837,
               "status": "passed"
             },
             "line": 6,
-            "name": "print result for items count in first page",
+            "name": "print result for valid value with remainder",
             "match": {
-              "location": "PageItemCount.print_result_for_items_count_in_first_page()"
+              "location": "PageIndexSteps.print_result_for_valid_value_with_remainder()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1286456,
+              "duration": 2183167,
               "status": "passed"
             },
             "line": 7,
-            "name": "actual count result must be equal to the expected count for first page",
+            "name": "actual count result must be equal to the expected result for valid value with remainder",
             "match": {
-              "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_first_page()"
+              "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_valid_value_with_remainder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@PageItemCount"
+            "name": "@PageIndex"
           }
         ]
       },
       {
         "line": 9,
-        "name": "This test count of the items in second page",
+        "name": "This test shows how many item are remaining without range",
         "description": "",
-        "id": "count-the-items-according-to-pages;this-test-count-of-the-items-in-second-page",
+        "id": "count-the-items-remaining-to-the-last-page;this-test-shows-how-many-item-are-remaining-without-range",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 47118,
+              "duration": 92927,
               "status": "passed"
             },
             "line": 10,
-            "name": "an array and integer value for count of page for page item count for page items",
+            "name": "an array and integer value for page index",
             "match": {
-              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+              "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 49095,
+              "duration": 5175766,
               "status": "passed"
             },
             "line": 11,
-            "name": "print result for items count in second page",
+            "name": "print result for valid value without remainder",
             "match": {
-              "location": "PageItemCount.print_result_for_items_count_in_second_page()"
+              "location": "PageIndexSteps.print_result_for_valid_value_without_remainder()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 26827,
+              "duration": 49251,
               "status": "passed"
             },
             "line": 12,
-            "name": "actual count result must be equal to the expected count for second page",
+            "name": "actual count result must be equal to the expected result for valid value without remainder",
             "match": {
-              "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_second_page()"
+              "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_valid_value_without_remainder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@PageItemCount"
+            "name": "@PageIndex"
           }
         ]
       },
       {
         "line": 14,
-        "name": "This scenario does test to the out of range values",
+        "name": "This test shows out of range for page index",
         "description": "",
-        "id": "count-the-items-according-to-pages;this-scenario-does-test-to-the-out-of-range-values",
+        "id": "count-the-items-remaining-to-the-last-page;this-test-shows-out-of-range-for-page-index",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 76233,
+              "duration": 58939,
               "status": "passed"
             },
             "line": 15,
-            "name": "an array and integer value for count of page for page item count for page items",
+            "name": "an array and integer value for page index",
             "match": {
-              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+              "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 80771,
+              "duration": 3766507,
               "status": "passed"
             },
             "line": 16,
-            "name": "print result for invalid value",
+            "name": "print result for out of range value",
             "match": {
-              "location": "PageItemCount.print_result_for_invalid_value()"
+              "location": "PageIndexSteps.print_result_for_out_of_range_value()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 200725,
+              "duration": 211111,
               "status": "passed"
             },
             "line": 17,
-            "name": "actual result must be equal -1",
+            "name": "actual count result must be equal to the expected result for out of range value",
             "match": {
-              "arguments": [
-                {
-                  "val": "-1",
-                  "offset": 28
-                }
-              ],
-              "location": "PageItemCount.actual_result_must_be_equal(Integer)"
+              "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_out_of_range_value()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@PageItemCount"
+            "name": "@PageIndex"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "This test shows negative for page index",
+        "description": "",
+        "id": "count-the-items-remaining-to-the-last-page;this-test-shows-negative-for-page-index",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114265,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "an array and integer value for page index",
+            "match": {
+              "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130531,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "print result for negative value",
+            "match": {
+              "location": "PageIndexSteps.print_result_for_negative_value()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2311531,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "actual count result must be equal to the expected result for negative value",
+            "match": {
+              "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_negative_value()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PageIndex"
           }
         ]
       }
     ],
-    "name": "Count the items according to pages",
+    "name": "Count the items remaining to the last page",
     "description": "",
-    "id": "count-the-items-according-to-pages",
+    "id": "count-the-items-remaining-to-the-last-page",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/pageItemCount.feature",
+    "uri": "src/test/resources/features/pageIndex.feature",
     "tags": [
       {
-        "name": "@PageItemCount",
+        "name": "@PageIndex",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -10,8 +10,8 @@ import utilities.Config;
 public class ItemCountSteps {
     PaginationHelper helper;
 
-    @Given("an array and integer value for count of page for count of items")
-    public void an_array_and_integer_value_for_count_of_page_for_count_of_items() {
+    @Given("an array and integer value for count of items")
+    public void an_array_and_integer_value_for_count_of_items() {
         double d = Double.parseDouble(Config.getProperties("page"));
         helper = new PaginationHelper( new char[]{'a','b','c','d','e','f'},d);
     }

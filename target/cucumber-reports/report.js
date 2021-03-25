@@ -1,130 +1,170 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/pageItemCount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/pageIndex.feature");
 formatter.feature({
-  "name": "Count the items according to pages",
+  "name": "Count the items remaining to the last page",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@PageItemCount"
+      "name": "@PageIndex"
     }
   ]
 });
 formatter.scenario({
-  "name": "This test count of the items in first page",
+  "name": "This test shows how many item are remaining within range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@PageItemCount"
+      "name": "@PageIndex"
     }
   ]
 });
 formatter.step({
-  "name": "an array and integer value for count of page for page item count for page items",
+  "name": "an array and integer value for page index",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+  "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "print result for items count in first page",
+  "name": "print result for valid value with remainder",
   "keyword": "When "
 });
 formatter.match({
-  "location": "PageItemCount.print_result_for_items_count_in_first_page()"
+  "location": "PageIndexSteps.print_result_for_valid_value_with_remainder()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "actual count result must be equal to the expected count for first page",
+  "name": "actual count result must be equal to the expected result for valid value with remainder",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_first_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "This test count of the items in second page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@PageItemCount"
-    }
-  ]
-});
-formatter.step({
-  "name": "an array and integer value for count of page for page item count for page items",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "print result for items count in second page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "PageItemCount.print_result_for_items_count_in_second_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "actual count result must be equal to the expected count for second page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_second_page()"
+  "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_valid_value_with_remainder()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "This scenario does test to the out of range values",
+  "name": "This test shows how many item are remaining without range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@PageItemCount"
+      "name": "@PageIndex"
     }
   ]
 });
 formatter.step({
-  "name": "an array and integer value for count of page for page item count for page items",
+  "name": "an array and integer value for page index",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+  "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "print result for invalid value",
+  "name": "print result for valid value without remainder",
   "keyword": "When "
 });
 formatter.match({
-  "location": "PageItemCount.print_result_for_invalid_value()"
+  "location": "PageIndexSteps.print_result_for_valid_value_without_remainder()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "actual result must be equal -1",
+  "name": "actual count result must be equal to the expected result for valid value without remainder",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PageItemCount.actual_result_must_be_equal(Integer)"
+  "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_valid_value_without_remainder()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This test shows out of range for page index",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@PageIndex"
+    }
+  ]
+});
+formatter.step({
+  "name": "an array and integer value for page index",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "print result for out of range value",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PageIndexSteps.print_result_for_out_of_range_value()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "actual count result must be equal to the expected result for out of range value",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_out_of_range_value()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This test shows negative for page index",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@PageIndex"
+    }
+  ]
+});
+formatter.step({
+  "name": "an array and integer value for page index",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PageIndexSteps.an_array_and_integer_value_for_page_index()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "print result for negative value",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PageIndexSteps.print_result_for_negative_value()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "actual count result must be equal to the expected result for negative value",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PageIndexSteps.actual_count_result_must_be_equal_to_the_expected_result_for_negative_value()"
 });
 formatter.result({
   "status": "passed"
