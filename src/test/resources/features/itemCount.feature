@@ -1,4 +1,4 @@
-@All
+@ItemCount
 Feature: Count of the items in the array
 
   Scenario: This test count all items in the array

@@ -16,8 +16,8 @@ public class PageCountSteps {
         helper = new PaginationHelper( new char[]{'a','b','c','d','e','f'},d);
     }
 
-    @When("method runs")
-    public void method_runs() {
+    @When("print result for page count")
+    public void print_result_for_page_count() {
         System.out.println(helper.pageCount());
     }
 

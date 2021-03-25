@@ -4,64 +4,172 @@
     "elements": [
       {
         "line": 4,
-        "name": "This test count all items in the array",
+        "name": "This test count of the items in first page",
         "description": "",
-        "id": "count-of-the-items-in-the-array;this-test-count-all-items-in-the-array",
+        "id": "count-the-items-according-to-pages;this-test-count-of-the-items-in-first-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2427999,
+              "duration": 3009946,
               "status": "passed"
             },
             "line": 5,
-            "name": "an array and integer value for count of page for count of items",
+            "name": "an array and integer value for count of page for page item count for page items",
             "match": {
-              "location": "ItemCountSteps.an_array_and_integer_value_for_count_of_page_for_count_of_items()"
+              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 119223,
+              "duration": 256828,
               "status": "passed"
             },
             "line": 6,
-            "name": "print result for items count",
+            "name": "print result for items count in first page",
             "match": {
-              "location": "ItemCountSteps.print_result_for_items_count()"
+              "location": "PageItemCount.print_result_for_items_count_in_first_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1941465,
+              "duration": 1286456,
               "status": "passed"
             },
             "line": 7,
-            "name": "actual count result must be equal to the expected count for count of items",
+            "name": "actual count result must be equal to the expected count for first page",
             "match": {
-              "location": "ItemCountSteps.actual_count_result_must_be_equal_to_the_expected_count_for_count_of_items()"
+              "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_first_page()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@All"
+            "name": "@PageItemCount"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "This test count of the items in second page",
+        "description": "",
+        "id": "count-the-items-according-to-pages;this-test-count-of-the-items-in-second-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 47118,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "an array and integer value for count of page for page item count for page items",
+            "match": {
+              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49095,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "print result for items count in second page",
+            "match": {
+              "location": "PageItemCount.print_result_for_items_count_in_second_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26827,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "actual count result must be equal to the expected count for second page",
+            "match": {
+              "location": "PageItemCount.actual_count_result_must_be_equal_to_the_expected_count_for_second_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PageItemCount"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "This scenario does test to the out of range values",
+        "description": "",
+        "id": "count-the-items-according-to-pages;this-scenario-does-test-to-the-out-of-range-values",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76233,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "an array and integer value for count of page for page item count for page items",
+            "match": {
+              "location": "PageItemCount.an_array_and_integer_value_for_count_of_page_for_page_item_count_for_page_items()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80771,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "print result for invalid value",
+            "match": {
+              "location": "PageItemCount.print_result_for_invalid_value()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 200725,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "actual result must be equal -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-1",
+                  "offset": 28
+                }
+              ],
+              "location": "PageItemCount.actual_result_must_be_equal(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PageItemCount"
           }
         ]
       }
     ],
-    "name": "Count of the items in the array",
+    "name": "Count the items according to pages",
     "description": "",
-    "id": "count-of-the-items-in-the-array",
+    "id": "count-the-items-according-to-pages",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/itemCount.feature",
+    "uri": "src/test/resources/features/pageItemCount.feature",
     "tags": [
       {
-        "name": "@All",
+        "name": "@PageItemCount",
         "type": "Tag",
         "location": {
           "line": 1,
